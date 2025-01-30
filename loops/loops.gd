@@ -54,5 +54,17 @@ func _draw() -> void:
 	for i in range(num_c_lines):
 		draw_line(Vector2(0, i * gap), Vector2(v.size.x, v.size.y - (i* gap)), Color.REBECCA_PURPLE)
 	
+	var num_h_circles = 15
+	var gaps = 115
+	var borders = 50
+	var radius = 50
+	var y = 300
+	
+	for i in range(num_h_circles):
+		var x = borders + i * gaps
+		var position = Vector2(x, y)
+		draw_circle(position, radius, Color.CORNFLOWER_BLUE)
+		
+	
 	
 	pass
