@@ -37,6 +37,14 @@ func _draw() -> void:
 	
 	for i in range(num_lines):
 		draw_line(Vector2(i * w, 0),Vector2(i * w, s.y), Color.RED)
+		
+	var num_h_lines = 15
+	var gap = 50
+	var border = 0
+	for i in range(num_h_lines):
+		draw_line(Vector2(border, border + gap * i), Vector2(v.size.x - border, border + gap * i), Color.GREEN_YELLOW)
+		
+	
 	
 	
 	pass
