@@ -19,6 +19,19 @@ func _draw() -> void:
 	
 	for i in range(10):
 		print(i)
+		
+	for i in range(10, -1, -1):
+		print(i)
+		
+	var basket = ["apple", "banana", "carrot"]
+	
+	for f in basket:
+		print(f)
+		
+	for i in range(basket.size()):
+		print(basket[i])
+		
+	
 	
 	
 	pass
