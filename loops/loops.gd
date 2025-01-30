@@ -44,7 +44,15 @@ func _draw() -> void:
 	for i in range(num_h_lines):
 		draw_line(Vector2(border, border + gap * i), Vector2(v.size.x - border, border + gap * i), Color.GREEN_YELLOW)
 		
+	var m = get_global_mouse_position()
+	print(m)
 	
+	var num_c_lines = m.x / 2
+	
+	gap = v.size.y / num_c_lines
+	
+	for i in range(num_c_lines):
+		draw_line(Vector2(0, i * gap), Vector2(v.size.x, v.size.y - (i* gap)), Color.REBECCA_PURPLE)
 	
 	
 	pass
