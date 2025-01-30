@@ -11,4 +11,7 @@ func _draw() -> void:
 	var r = Rect2(10, 10, 100, 30)
 	draw_rect(r,Color.AQUA, false, 5)
 	draw_line(Vector2(50, 50), Vector2(200, 200), Color.WHITE)
+	draw_circle(Vector2(500, 500), 100 , Color.BLUE_VIOLET, true)
+	
+	
 	pass
